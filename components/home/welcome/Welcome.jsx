@@ -29,7 +29,7 @@ const Welcome = () => {
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
-            value=""
+            value={""}
             onChange={() => { }}
             placeholder='What are you looking for?'
           />
@@ -57,7 +57,7 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
-          keyExtractor={item => item}
+          keyExtractor={(item) => item}
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         />
@@ -66,4 +66,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome
+export default Welcome;
